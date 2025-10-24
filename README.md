@@ -19,3 +19,17 @@ This Python-based tool evaluates password strength against common attack pattern
    - Libraries: `zxcvbn`, `matplotlib`, `sqlite3` (install via `conda install` or `pip install zxcvbn matplotlib`).
 
 2. **Clone Repository**:
+3. **Environment Setup**:
+- Create Anaconda env: `conda create -n password-analyzer python=3.12`
+- Activate: `conda activate password-analyzer`
+- Install deps: `pip install zxcvbn matplotlib`
+
+4. **Run the Code**:
+- Main script: `python password_analyzer.py`
+- Jupyter Notebook: `jupyter notebook password_analysis.ipynb` (prototype tests).
+- Example: Input a password via CLI; view score and suggestions.
+
+## Additional Information
+- Data: `weak_passwords.db` contains 2025 common passwords (e.g., "123456") sourced ethically.
+- Testing: Run `tests/test_strength.py` for unit tests.
+
